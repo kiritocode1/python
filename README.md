@@ -1,0 +1,1 @@
+# Blog 2 hosted [here](https://kiritocode1.github.io/python)
