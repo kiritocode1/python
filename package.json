@@ -1,7 +1,7 @@
 {
   "name": "python",
   "version": "0.1.0",
-  "homepage": "kiritocode1.github.io/python",
+  "homepage": "kiritocode1.github.io/python/",
   "private": true,
   "dependencies": {
     "@testing-library/jest-dom": "^5.16.5",
