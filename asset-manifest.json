@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/kiritocode1.github.io/python/static/css/main.073c9b0a.css",
+    "main.js": "/kiritocode1.github.io/python/static/js/main.0c55ab77.js",
+    "static/js/787.7367c0c1.chunk.js": "/kiritocode1.github.io/python/static/js/787.7367c0c1.chunk.js",
+    "static/media/logo.svg": "/kiritocode1.github.io/python/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
+    "index.html": "/kiritocode1.github.io/python/index.html",
+    "main.073c9b0a.css.map": "/kiritocode1.github.io/python/static/css/main.073c9b0a.css.map",
+    "main.0c55ab77.js.map": "/kiritocode1.github.io/python/static/js/main.0c55ab77.js.map",
+    "787.7367c0c1.chunk.js.map": "/kiritocode1.github.io/python/static/js/787.7367c0c1.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.073c9b0a.css",
+    "static/js/main.0c55ab77.js"
+  ]
+}
