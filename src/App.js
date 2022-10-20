@@ -6,9 +6,9 @@ import "./style.css"
 import { Image, Text } from "@nextui-org/react";
 import { Progress } from "@nextui-org/react";
 import { DiPython } from "react-icons/di";
-
+import rd3 from "react-d3-library"; 
+import chart from "./Images/chart.svg"; 
 export default function App() {
-
   return (
     <div className="App bg-black pt-20 md:px-40">
       <Image src="https://c.tenor.com/qnp4xGGoC44AAAAC/cute-awe.gif" width={450} />
@@ -20,7 +20,10 @@ export default function App() {
         <Text color="$purple700" h1 className="flex items-center">Soo , Why learn <DiPython /> ??? </Text>
         <Text h4 color="$purple800" >If youre a beginner to programming or just looking for better opportunities , python is the language to learn . look @ this graph  </Text>
         {/* <BarChart BarChartData={LanguageData}/> */}
-      <Text h4 color="$purple800" > this graph clearly shows  that python is the most loved and important languages in modern time   </Text>
+        <div>
+          <Image src={chart} alt="Chart showing Python Dominance " />
+        </div>
+      <Text h4 color="$purple800" > this graph clearly shows  that python is the most loved and important languages in modern time , mostly due to its easy to read syntax .  </Text>
 
         
       </div>
