@@ -1,10 +1,10 @@
 
 import React from 'react'
-import { Text, Collapse, Card , Image } from '@nextui-org/react'; 
+import { Text, Collapse, Card , Switch } from '@nextui-org/react'; 
 
 
 
-
+import {FaBrain} from "react-icons/fa" ; 
 
 
 
@@ -60,16 +60,31 @@ const CollapseRules = () => {
 
       <Collapse title="Simple by Design">
         <Text >
-          the main design philosophy in python is to not care about the speed but the Simplicity to write the code  , its almost  <b className="tic-tock my-2">Criminal</b> . Python does not want you to care about the hardware and underlying physical processes .
+          the main design philosophy in python is to not care about the speed but the Simplicity to write the code  , its almost  <b className="tic-tock my-2">Criminal</b> . Python does not want you to care about the hardware and underlying physical processes like pointers and garbage collection  .
+          which im sure if you learn C language , you'll understand is such an amazing feature of the python . <br />
+          what do you say ? do you prefer <b>Control</b> over this seemingly important aspect of program or would you prefer let python handle them . 
+          <br />
+          <b className='flex items-center gap-1 flex-wrap' >Personally I would prefer python's ways coz i just want to turn of my brain <Switch
+          checked={false}
+          size="md"
+          color="error"
+            icon={<FaBrain />}
+            shadow
+          />
+          and let python handle these stuff 😭.
+          </b>
           
         </Text>
+
+
+
+
+
+
       </Collapse>
-      <Collapse title="Option C">
+      <Collapse title="Huge Community">
         <Text>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-          eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
-          minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-          aliquip ex ea commodo consequat.
+          Python Has Unsurprisingly Huge Community of developers who build modules , tools and products 
         </Text>
       </Collapse>
     </Collapse.Group>
