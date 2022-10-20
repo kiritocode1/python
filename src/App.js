@@ -6,13 +6,13 @@ import "./style.css"
 import { Image, Text } from "@nextui-org/react";
 import { Progress } from "@nextui-org/react";
 import { DiPython } from "react-icons/di";
-import rd3 from "react-d3-library"; 
+
 import chart from "./Images/chart.svg"; 
 import CollapseRules from "./components/Collapse/Collapse";
 export default function App() {
   return (
     <div className="App bg-black pt-20 md:px-40">
-      <Text h6 >kiritocode1.github.io</Text>
+      <Text  className="flex items-center font-bold font-mono">kiritocode1.github.io/ <Text  color="$green600" className="animate-pulse">python</Text></Text>
       <Image src="https://c.tenor.com/qnp4xGGoC44AAAAC/cute-awe.gif" width={450} />
       <Text h1 size={60} css={{ textGradient: "45deg ,$green50 -30% , $green600 90%" }} >Blog #2 Python:Basics 🐍  </Text>
       <Text  >Hello World , its me Aryan back with another blog about basics of Python 🐍 Programming language <br /> this blog is beginners friendly 😊 and anyone can read this blog to understand a lot about <br /> python as a programming language . <br /> in the future 🚀 blog we'll cover python with data science    </Text>
