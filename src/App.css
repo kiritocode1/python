@@ -36,3 +36,7 @@
     transform: rotate(360deg);
   }
 }
+
+.Developer_ecosystem_text{
+  font-style: monospace;
+}
