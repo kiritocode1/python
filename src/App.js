@@ -1,8 +1,6 @@
 
 import "./style.css"
 
-// import BarChart from "./components/BarChart";
-// import { LanguageData } from "./components/BarData";
 import { Card, Checkbox, Image, Text } from "@nextui-org/react";
 import { Progress  , Link} from "@nextui-org/react";
 import { DiPython } from "react-icons/di";
@@ -10,8 +8,13 @@ import exeimg from "./Images/saveas.png"
 import chart from "./Images/chart.svg"; 
 import CollapseRules from "./components/Collapse/Collapse";
 import add_to_path from "./Images/add_to_path.png"; 
-import {RiSkullFill} from "react-icons/ri" ; 
+import { RiSkullFill } from "react-icons/ri"; 
+import ParticleImage, {forces , Vector } from "react-particle-image";
+const src =
+  "https://upload.wikimedia.org/wikipedia/commons/thumb/4/42/Love_Heart_SVG.svg/645px-Love_Heart_SVG.svg.png";
+
 export default function App() {
+
   return (
     <div className="App bg-black pt-20 md:px-40">
       <Text  className="flex items-center font-bold font-mono">kiritocode1.github.io/ <Text  color="$green600" className="animate-pulse">python</Text></Text>
@@ -45,6 +48,37 @@ export default function App() {
         </Card.Body>
       </Card>
       <Image src={add_to_path} alt="Image depicting add to path" />
+      <Text h3> Congratulations !! , now you can run python , here have a treat 😃 . im soo proud of you </Text>
+      <div className="w-full overflow-hidden flex items-center h-60">
+      <ParticleImage
+        scale={0.3}
+        maxParticles={2000}
+        backgroundColor="#000"
+        src={src}
+        mouseMoveForce={(x, y) => forces.disturbance(x, y, 60)}
+        touchMoveForce={(x, y) => forces.disturbance(x, y, 60)}
+        mouseDownForce={(x, y) => forces.disturbance(x, y, 50)}
+        particleOptions={{
+          mass: () => 40,
+          filter: ({ x, y, image }) => {
+            const pixel = image.get(x, y);
+            return pixel.r === 255;
+          },
+          color: () => "#FF0000",
+          friction: () => 0.10,
+          initialPosition: ({ canvasDimensions }) => {
+            return new Vector(
+              canvasDimensions.width / 9,
+              canvasDimensions.height / 2
+            );
+          }
+        }}
+      /></div>
+            <Text h1 color="$yellow600">Hello world (first program) </Text>
+      <Text h6>now Its finally 🕐 time for our first program .
+      a simple program which prints out hello world 
+      
+      </Text>
     </div>
   );
 }
