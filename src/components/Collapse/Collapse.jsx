@@ -1,21 +1,20 @@
 
 import React from 'react'
-import { Text, Collapse, Card , Switch } from '@nextui-org/react'; 
+import { Text, Collapse, Card , Switch , Link } from '@nextui-org/react'; 
 
 
 
-import {FaBrain} from "react-icons/fa" ; 
-
-
-
+import {FaBrain , FaGlobeAfrica} from "react-icons/fa" ; 
+import {TbBraces} from "react-icons/tb" ; 
+import { SlLike } from "react-icons/sl"; 
 
 
 
 
 const CollapseRules = () => {
   return (
-     <Collapse.Group accordion={false}>
-      <Collapse title="No Brackets">
+     <Collapse.Group accordion={false} bordered>
+      <Collapse title="No Brackets" arrowIcon={<TbBraces/>}>
               <Text className='flex items-center justify-start flex-col  gap-2'>
                   <div className='flex items-center gap-2'>Python  Intrestingly Does not use
                   <Text blockquote color='$green700'>{'{\t}'}</Text></div>
@@ -58,7 +57,7 @@ const CollapseRules = () => {
 
 
 
-      <Collapse title="Simple by Design">
+      <Collapse title="Simple by Design" arrowIcon={<SlLike/>}>
         <Text >
           the main design philosophy in python is to not care about the speed but the Simplicity to write the code  , its almost  <b className="tic-tock my-2">Criminal</b> . Python does not want you to care about the hardware and underlying physical processes like pointers and garbage collection  .
           which im sure if you learn C language , you'll understand is such an amazing feature of the python . <br />
@@ -82,9 +81,11 @@ const CollapseRules = () => {
 
 
       </Collapse>
-      <Collapse title="Huge Community">
-        <Text>
-          Python Has Unsurprisingly Huge Community of developers who build modules , tools and products 
+      <Collapse title="Huge Community" arrowIcon={<FaGlobeAfrica/>}>
+        <Text className='flex flex-wrap items-center '>
+          Python Has Unsurprisingly Huge Community of developers who build modules , tools and products . Like <Link block color="warning" href="https://www.tensorflow.org/" target="_blank" rel='noreferrer'>Tensorflow</Link> , 
+          <Link block color="success" href="https://www.selenium.dev/" target="_blank" rel='noreferrer'>Selenium</Link> 
+          Soo many amazing projects . You will thrive in this community and will make a lot of money as well . its the language of AI , and AI is the Shiny new future 😄 . 
         </Text>
       </Collapse>
     </Collapse.Group>
