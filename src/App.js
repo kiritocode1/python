@@ -48,7 +48,7 @@ export default function App() {
           <Text className="flex  items-center gap-1 flex-wrap" ><RiSkullFill className="text-3xl text-red-600 " /> <b>IMPORTANT:</b> Make Sure you <Checkbox defaultSelected={true} size="sm" isRounded={true} color="error"></Checkbox> add to path option !!!</Text>
         </Card.Body>
       </Card>
-      <br/>
+      <br />
       <Image src={add_to_path} alt="Image depicting add to path" className="my-20" />
       <Text h3> Congratulations !! , now you can run python , here have a treat 😃 . im soo proud of you </Text>
       <div className="w-full overflow-hidden flex items-center h-60">
@@ -76,7 +76,7 @@ export default function App() {
             }
           }}
         /></div>
-      <Text h1 color="$yellow600">Hello 🌎  </Text>
+      <Text h1 color="$yellow600">Hello 🌎</Text>
       <Text h6>now Its finally 🕐 time for our first program .
         a simple program which prints out hello world ,
         go on and make a program file .
@@ -89,21 +89,51 @@ export default function App() {
         <Card.Divider></Card.Divider>
         <Card.Body>
 
-          <Text  className="flex" >
-             <pre className="text-md ">
-              print(<bold className="text-yellow-600 ">"Hello world"</bold>) 
+          <Text className="flex" >
+            <pre className="text-md ">
+              print(<bold className="text-yellow-600 ">"Hello world"</bold>)
               <strong className="mx-4 text-slate-700">{"// make a .py file and \n // copy this line 😄"}</strong>
-              </pre> 
+            </pre>
           </Text>
         </Card.Body>
         
       </Card>
-      <br/>
+      <br />
       <Text> Lets breakdown this code one by one , shall we , the print here is a function .  A <i className="text-red-400">function</i> is just a mechanism that takes an input and returns something .
-      think of it as an engine ,  it takes oil (input) to run and do something , makes senes right . <i className="text-purple-300">print</i>  here is a special function  , that 
+        think of it as an engine ,  it takes oil (input) to run and do something , makes senes right . <i className="text-purple-300">print</i>  here is a special function  , that takes a value and prints it to the terminal
+        the art of <i className="text-green-300">python</i> is nothing but handling functions  and data properly.
       </Text>
-      <br/>
-      <Image  src={funct}  alt="example image"  autoResize width={430} />
+      <br />
+      <Image src={funct} alt="example image" autoResize width={430} />
+      <br />
+      <Text >We're going to use print to print out stuff here and there   </Text>
+      <Card isHoverable  >
+        <Card.Header>
+          <Text color='$green600' className="font-mono">Hello.py </Text>
+        </Card.Header>
+        <Card.Divider></Card.Divider>
+        <Card.Body>
+
+          <Text className="flex" >
+            <pre className="text-md ">
+              print(<bold className="text-yellow-600 ">"Hello world"</bold>) <br />
+              print(<bold className="text-sky-600 font-mono ">100</bold>)
+              <strong className="mx-4 text-slate-700">{"// prints 100 to terminal"}</strong>
+              <br />
+              print(<bold className="text-purple-400 font-mono ">3.14</bold>)
+              <strong className="mx-4 text-slate-700">{"// prints 3.14 to terminal"}</strong>
+              <br />
+              print(<bold className="text-red-400 font-mono ">True</bold>)
+              <strong className="mx-4 text-slate-700">{"// prints True to terminal"}</strong>
+              <br />
+              print(<bold className="text-yellow-400 font-mono ">None</bold>)
+              <strong className="mx-4 text-slate-700">{"// prints None or nothing  to terminal"}</strong>
+              <br/>
+            </pre>
+          </Text>
+        </Card.Body>
+        
+      </Card>
     </div>
   );
 }
