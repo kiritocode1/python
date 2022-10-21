@@ -1,16 +1,17 @@
 {
   "files": {
-    "main.css": "/python/static/css/main.6dc709b0.css",
-    "main.js": "/python/static/js/main.d79ad09f.js",
+    "main.css": "/python/static/css/main.b4a567d9.css",
+    "main.js": "/python/static/js/main.211853eb.js",
     "static/js/787.7367c0c1.chunk.js": "/python/static/js/787.7367c0c1.chunk.js",
+    "static/media/add_to_path.png": "/python/static/media/add_to_path.4867eda1d689c3ce11cc.png",
     "static/media/chart.svg": "/python/static/media/chart.ee947a42b0394b6dca05230fa923b509.svg",
     "index.html": "/python/index.html",
-    "main.6dc709b0.css.map": "/python/static/css/main.6dc709b0.css.map",
-    "main.d79ad09f.js.map": "/python/static/js/main.d79ad09f.js.map",
+    "main.b4a567d9.css.map": "/python/static/css/main.b4a567d9.css.map",
+    "main.211853eb.js.map": "/python/static/js/main.211853eb.js.map",
     "787.7367c0c1.chunk.js.map": "/python/static/js/787.7367c0c1.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.6dc709b0.css",
-    "static/js/main.d79ad09f.js"
+    "static/css/main.b4a567d9.css",
+    "static/js/main.211853eb.js"
   ]
 }
