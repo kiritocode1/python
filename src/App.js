@@ -36,7 +36,7 @@ export default function App() {
                         <div className='flex items-center gap-2 flex-wrap'>1. Go to 
         <Link block color="success" href="https://www.python.org/downloads/" target="_blank" rel='noreferrer' >python.org/downloads</Link> and press <Text blockquote color="$yellow700" >Download python</Text> button.</div>
       <Text className="flex items-center gap-1 flex-wrap">2. Save python anywhere you want!  once you do youll get an  <Image src={exeimg} autoResize /> file , go ahead and click on it . </Text>
-      <Text className="flex items-center gap-1 my-10">3. what youll get is a python setup wizard , go ahead and select <i className="text-green-600">add python to path</i>, then press <b className="text-green-600">Install Now</b> option .  </Text>
+      <Text className="flex items-center gap-1 my-10 flex-wrap justify-start">3. what youll get is a python setup wizard , go ahead and select <i className="text-green-600 flex flex-wrap">add python to path</i>, then press <b className="text-green-600 flex flex-wrap">Install Now</b> option .  </Text>
       <Card isHoverable  >
         <Card.Body >
           
